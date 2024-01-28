@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Plant Sapling Order Form</title>
+    <link rel="stylesheet" type="text/css" href="home-page.css">
+    <style>
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            border-radius: 4px rgb(7, 6, 6);
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: darkgreen;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NANDISHWARA NURSERY</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="home-page.html">Home</a>
+            <a href="product-page.html">Products</a>
+            <a href="contact-page.html">Contact</a>
+        </div>
+        <div>
+            <a href="order-page.html">Order Now!</a>
+        </div>
+    </nav>
+
+    <form>
+        <h2>Plant Sapling Order Form</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+<br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+<br><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required>
+<br><br>
+	    <label for="sapling">Type of sapling: </label>
+<br>
+	    <label for="tomato">Tomato</label>
+	    <input type="checkbox" name="tomato">
+	    <label for="capsicum">Capsicum</label> 
+	    <input type="checkbox" name="capsicum"> 
+	    <label for="cabbage">Cabbage</label> 
+	    <input type="checkbox" name="cabbage"> 
+	    <label for="chilli">Chilli</label> 
+	    <input type="checkbox" name="chilli"> 
+	    <label for="brinjal">Brinjal</label> 
+	    <input type="checkbox" name="brinjal"> 
+	    <label for="cauliflower">Cauliflower</label> 
+	    <input type="checkbox" name="cauliflower"> 
+	    <label for="cucumber">Cucumber</label> 
+	    <input type="checkbox" name="cucumber"> 
+	    <label for="marigold">Marigold</label> 
+	    <input type="checkbox" name="marigold"> 
+<br><br>
+        <label for="quantity">Quantity (number of tray's):</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+<br><br>
+        <label for="packType">Type of Packing:</label>
+        <select id="packType" name="packType" required>
+	    <option value="select">Select any</option>
+        <option value="ct">Cardboard box(with tray)</option>
+        <option value="cwt">Cardboard box(without tray)</option>
+        </select>
+	    <p>*If packing with tray, you have to return the tray back to us.</p>
+<br><br>
+        <label for="pickupDate">Date of Pickup:</label><br>
+        <input type="date" id="pickupDate" name="pickupDate" required>
+<br><br><br>
+        <button type="submit">Submit Order</button>
+    </form>
+
+<footer>
+        <pre>&copy; 1995-2024 Nandishwara Nursery. All Rights Reserved.
+</pre>
+	    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+</footer>
+
+</body>
+</html>
